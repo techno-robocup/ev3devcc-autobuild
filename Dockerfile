@@ -5,5 +5,5 @@ FROM ev3dev/debian-stretch-cross
 WORKDIR /src
 
 # Define the command to compile the project
-CMD ["arm-linux-gnueabi-g++", "-Iinclude", "-std=c++2b", "-o", "a.out", "main.cpp"]
+CMD ["arm-linux-gnueabi-g++", "-Iinclude", "-std=c++17", "-o", "a.out", "main.cpp"]
 
